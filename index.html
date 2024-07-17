@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário Beatriz Grassi</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container"> 
+        <iframe id="soundcloudPlayer" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"  
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1851208599&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe>
+        <button id="playButton" onclick="playAudio()">Clique para ativar o som</button>
+    </div>
+
+    <header class="navbar navbar-expand-lg sticky-top pt-4" id="cabecalho">   
+        
+        <div class="container"> 
+            <h1 class="navbar-brand letra-pacifico fs-1 ">03 anos Beatriz Grassi</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon" > </span> 	
+            </button>
+
+            <nav id="menu" class="collapse navbar-collapse justify-content-end pb-2">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold"> 
+                        <a href="#sobre" class="nav-link menu-link active" data-bs-target="#sobre"> 
+                            <i class="bi bi-house-door me-1"></i>		
+                            Chapeuzinha Vermelha
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold"> 
+                        <a href="#convite" class="nav-link menu-link" data-bs-target="#convite">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Convite
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold"> 
+                        <a href="#elenco" class="nav-link menu-link" data-bs-target="#elenco">
+                            <i class="bi bi-people-fill"></i>
+                            Elenco
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold"> 
+                        <a href="#informacoes" class="nav-link menu-link" data-bs-target="#informacoes"> 
+                            <i class="bi bi-card-text me-1"></i>
+                            Informações
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold"> 
+                        <a href="#contato" class="nav-link menu-link" data-bs-target="#contato"> 
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Confirme a sua presença!
+                        </a>
+                    </li>
+                </ul> 
+            </nav>
+        </div>
+    </header>
+
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true"> 
+
+        <section id="sobre">             
+            <div class="container">
+                <div id="carousel-exemplo" class="carousel slide"  data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img class="d-block w-100" src="./imagens/chapeuzinha-2.jpeg" >
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100"   src="./imagens/lobo mau cama.jpeg" >
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100"   src="imagens/elenco.jpeg" >
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100"   src="imagens/chapeuzinha na floresta.jpeg" >
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100"   src="imagens/vovo e chapeuzinha(1).jpeg" >
+                        </div>
+                    </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-exemplo">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-exemplo">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <div class="carousel-indicators">
+                        <button type="button" class="active" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"></button>    
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button> 
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button> 
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button> 
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button> 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="convite" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <video controls src="./imagens/Vídeo.MOV" class="w-100"> </video>
+                    </div>
+                    <div class="col-md-5 col-sm-12 text-center mt-5">
+                        <div >
+                            <p class="letra-pacifico fs-3 pt-5"> Venha pronto para uma tarde cheia de brincadeiras, histórias e muita diversão.</p>
+                            <p class="letra-pacifico fs-3 pt-3"> Não esqueça de confirmar a presença e trazer uma roupa reserva . </p>
+                                
+                            <h2 class=" titulo letra-pacifico pt-5 mt-5 fs-1"> Estamos aguardando voce para viver essa história   </h2>  
+                            <h2> <span class="cor-white letra-pacifico mt-5 fs-1"> com a gente! </span>  </h2> 
+                        </div>
+                    </div>
+                </div>               
+                
+            </div>
+
+        </section>
+
+        <section id="elenco" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="letra-pacifico text-center fs-1 mb-5"> Elenco <span class="cor-white"> de estrelas </span>  </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-3 col-sm-12">
+                            <img src="./imagens/bia chapeuzinha.jpeg" class="d-block w-100 rounded pb-2">
+                            <h4 class="letra-pacifico pb-2 pt-2"> 
+                                <span class="cor-white">
+                                    <i class="bi bi-balloon-heart-fill"></i> 
+                                    Chapeuzinha Vermelha </span> </h4>
+                            <h5> A mais linda chapeuzinha do reino: Beatriz Grassi</h5>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-12">
+                            <img src="./imagens/caçador(1).jpeg" class="d-block w-100 rounded pb-2" >
+                            <h4 class="letra-pacifico pb-2 pt-2"> 
+                                <span class="cor-white">                                 
+                                    <i class="bi bi-balloon-heart-fill"></i>
+                                    O Caçador </span> </h4>
+                                    <h5 > O caçador mais brabo e lindo: Pietro Grassi </h5>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-12">
+                            <img src="./imagens/WhatsApp Image 2024-07-16 at 17.43.50.jpeg" class="d-block w-100 rounded pb-2" >
+                            <h4 class="letra-pacifico pb-2 pt-2 "> 
+                                <span class="cor-white "> 
+                                    <i class="bi bi-balloon-heart-fill"></i> 
+                                    Lobo Mau </span> </h4>
+                                    <h5 > O pai brasileiro como o lobo mau (zero pena kkk) </h5>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-12">
+                            <img src="./imagens/WhatsApp Image 2024-07-16 at 16.29.43(1).jpeg" class="d-block w-100 rounded pb-2" >
+                            <h4 class="letra-pacifico pb-2 pt-2 "> 
+                                <span class="cor-white "> 
+                                    <i class="bi bi-balloon-heart-fill"></i> 
+                                    Vovozinha </span> </h4>
+                                    <h5 > Blogueira sempre e Vovozinha nas horas vagas: Vovó Regina Celi </h5>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-12">
+                            <img src="./imagens/a direcao.jpeg" class="d-block w-100 rounded pb-2" >
+                            <h4 class="letra-pacifico pb-2 pt-2 "> 
+                                <span class="cor-white "> 
+                                    <i class="bi bi-balloon-heart-fill"></i> 
+                                    A direção </span> </h4>
+                                    <h5 > Figurino, make e pau para toda a obra! kkk </h5>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="informacoes">
+                <div class="container">
+                    <div class="row"> 
+                        <h2 class="letra-pacifico text-center mb-5 fs-1 pt-5">  Informações <span class="cor-white"> Importantes </span>  </h2>
+                    </div>                
+                    <div class="row">
+                        <aside class="col-md-2 col-sm-12">
+                            <nav class="nav nav-pills flex-column pb-5 nav-informacoes">
+                                <button type="button" class="fw-bold text-start nav-link cor-white active m-1" data-bs-toggle="tab" data-bs-target="#aba1"> Data </button>
+                                <button type="button" class="fw-bold text-start nav-link cor-white m-1" data-bs-toggle="tab" data-bs-target="#aba2"> Local </button>
+                                <button type="button" class="fw-bold text-start nav-link cor-white m-1" data-bs-toggle="tab" data-bs-target="#aba3"> Roupas especiais </button>
+                                
+                            </nav>
+                        </aside> 
+
+                        <div class="col-md-10 col-sm-12">
+                            <div class="tab-content"> 
+                                <div class="tab-pane active " id="aba1"> 
+                                    <div class="row">
+                                        <div class="col-md-4 mb-5 col-sm-12">
+                                            <img src="./imagens/calendario.jpg" class="d-block w-10 rounded" />
+                                        </div>     
+                                        <div class="col-md-8 mt-5 col-sm-12">
+                                            <h5 class="text-center letra-pacifico fs-2 fw-bold"> Dia 04 de agosto de 2024 </h5>
+                                            <h5 class="text-center letra-pacifico fs-3 fw-bold mb-5"> ás 15hrs </h5>
+                                        </div>                              
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="aba2"> 
+                                    <div class="row">
+                                        <div class="col-md-4  ">
+                                            <img src="./imagens/arenaa.jpg" class="d-block w-100' rounded" />
+                                        </div>     
+                                        <div class="col-md-8 mt-5" >
+                                            <h5 class="text-center letra-pacifico fs-2 fw-bold"> Arena Pele </h5>
+                                            <h5 class="text-center letra-pacifico fs-4 "> R. José Augusto Sampaio, 171, </h5>
+                                            <h5 class="text-center letra-pacifico fs-4 "> Cruz das Almas - Bahia, 44380-000 </h5>
+                                            
+                                        </div>                              
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="aba3"> 
+                                    <div class="row">
+                                            <h5 class=" fw-bold fs-2 letra-pacifico text-center mt-2"> Roupas Especiais </h5>
+                                            <p class="fs-4 letra-pacifico text-center"> Teremos um banho especial na quadra ás 16hrs! </p>
+                                            <p class="fs-4 letra-pacifico text-center"> Trazer uma roupa para se molhar e outra para curtir a festa. </p>
+                                    </div>
+                                </div>                            
+                            </div>    
+                        </div>
+                    </div>
+                </div>    
+        </section>
+
+        <section id="contato" class="pb-5 pt-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="letra-pacifico  text-center "> Confirme a <span class="cor-white"> sua presença </span> </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="mb-3"> 
+                                    <label for="nome" class="form-label fw-bold cor-white "> Seu nome </label>
+                                    <input type="text" id="nome" class="form-control mb-3" required>                                 
+                                </div>
+                                <div class="mb-3">
+                                    <label for="number" class="form-label fw-bold cor-white"> Quantas pessoas? </label>
+                                    <input type="number" max="10" min="1" id="convidados" class="form-control mb-3" required>                                 
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label fw-bold cor-white"> Seu telefone (opcional) </label>
+                                    <input type="tel" id="telefone" class="form-control " >                                 
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label fw-bold cor-white"> Deixe aqui a sua mensagem para ela </label>
+                                    <textarea id="mensagem" class="form-control mb-3" required> </textarea>                             
+                                </div>
+                                <button type="submit" class="btn mb-4"> Enviar </button>                            
+                            </form>
+                        </div>
+                    </section>            
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; Denise Grassi DEV - Todos os direitos reservados - 2024.       
+                </p>
+            </div>
+        </footer>
+    
+    </div>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        function playAudio() {
+            var iframe = document.getElementById('soundcloudPlayer');
+            var widget = SC.Widget(iframe);
+            widget.setVolume(100); // Set the volume to 100%
+        }
+
+        function initializePlayer() {
+            var iframe = document.getElementById('soundcloudPlayer');
+            var widget = SC.Widget(iframe);
+            widget.setVolume(0); // Set the volume to 0 for autoplay
+            widget.play();
+
+            // Show play button after a short delay to allow autoplay to start
+            setTimeout(function() {
+                document.getElementById('playButton').style.display = 'block';
+            }, 1000);
+        }
+
+        window.onload = initializePlayer;
+    </script>
+</body>
+</html>

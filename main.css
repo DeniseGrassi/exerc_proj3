@@ -1,0 +1,92 @@
+body{
+    font-family: Roboto, sans-serif;
+    background-color: rgba(201, 18, 18, 0.726);
+}
+.navbar {  /* Cor de fundo do cabeçalho. Em vez de .navbar, poderia usar o #cabecalho */
+    background-color: rgb(201, 25, 25);
+} 
+#cabecalho .nav .nav-link.active { /* Estilizando apenas o '3 anos beatriz' do menu */
+    background-color: #fff;
+    color: red;
+}
+
+.carousel-inner img {
+    max-height: 2000px; 
+    max-width: 2000px ;/* Ajuste a altura máxima conforme necessário */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+ /* Estilizando os outros itens do menu */
+#cabecalho .nav .nav-link,
+ .navbar-brand, /* Estilizando o 3 anos beatriz */
+.navbar-brand:hover  /* Tirando o efeito de passar o mouse no nome 3 anos beatriz e mudar a cor sozinho */{  
+    color: #fff;
+}
+.navbar-toggler {  /* Botão do menu hambúrguer */
+    background-color: #e6fffc;
+}
+.letra-pacifico {  /* Adicionando a letra que foi pega no Google Fonts nas classes onde quer estilizar */
+    font-family: Pacifico, cursive; 
+}
+
+.nav-informacoes .nav-link.active, /* estilizando as abas da informacao */
+#contato button {    /* estilizando o botao do formulario*/
+    background-color: red;
+    color: #fff;
+}
+.nav-informacoes .nav-link:hover {
+    color:red
+}
+
+.cor-white {
+    color: #fff;   
+}
+
+
+h5 {
+    font-style: italic;
+}
+
+
+#convite h2 .titulo {
+    padding-right: 100px;
+}
+
+#playButton {
+    display: none;
+    margin-top: 20px;
+}
+
+/* main.css */
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-inner {
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .letra-pacifico {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .tab-content img {
+        width: 100%;
+        height: auto;
+    }
+}
